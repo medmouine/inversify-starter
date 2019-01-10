@@ -1,0 +1,5 @@
+{
+  "token": {
+    "env_var": "AGENT_AUTH"
+  }
+}

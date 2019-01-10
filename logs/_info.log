@@ -1,0 +1,19 @@
+info: listening on port 3000
+info: GET /helloworld 200 13 - 24.135 ms
+info: listening on port 3000
+error: uncaughtException: this.init is not a function
+TypeError: this.init is not a function
+    at new Server (webpack-internal:///./app.ts:23:14)
+    at Function.bootstrap (webpack-internal:///./app.ts:19:16)
+    at eval (webpack-internal:///./index.ts:9:28)
+    at Object../index.ts (/home/med/Documents/inversify-starter/dist/index.js:109:1)
+    at __webpack_require__ (/home/med/Documents/inversify-starter/dist/index.js:20:30)
+    at /home/med/Documents/inversify-starter/dist/index.js:84:18
+    at Object.<anonymous> (/home/med/Documents/inversify-starter/dist/index.js:87:10)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32) {"error":{},"stack":"TypeError: this.init is not a function\n    at new Server (webpack-internal:///./app.ts:23:14)\n    at Function.bootstrap (webpack-internal:///./app.ts:19:16)\n    at eval (webpack-internal:///./index.ts:9:28)\n    at Object../index.ts (/home/med/Documents/inversify-starter/dist/index.js:109:1)\n    at __webpack_require__ (/home/med/Documents/inversify-starter/dist/index.js:20:30)\n    at /home/med/Documents/inversify-starter/dist/index.js:84:18\n    at Object.<anonymous> (/home/med/Documents/inversify-starter/dist/index.js:87:10)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)","exception":true,"date":"Thu Jan 10 2019 00:52:03 GMT-0500 (EST)","process":{"pid":24712,"uid":1000,"gid":1000,"cwd":"/home/med/Documents/inversify-starter","execPath":"/usr/bin/node","version":"v8.12.0","argv":["/usr/bin/node","/home/med/Documents/inversify-starter/dist/index.js"],"memoryUsage":{"rss":67747840,"heapTotal":42299392,"heapUsed":26808840,"external":256079}},"os":{"loadavg":[1.755859375,1.5859375,1.69873046875],"uptime":22387},"trace":[{"column":14,"file":"webpack-internal:///./app.ts","function":"new Server","line":23,"method":null,"native":false},{"column":16,"file":"webpack-internal:///./app.ts","function":"Function.bootstrap","line":19,"method":"bootstrap","native":false},{"column":28,"file":"webpack-internal:///./index.ts","function":"eval","line":9,"method":null,"native":false},{"column":1,"file":"/home/med/Documents/inversify-starter/dist/index.js","function":"Object../index.ts","line":109,"method":"ts","native":false},{"column":30,"file":"/home/med/Documents/inversify-starter/dist/index.js","function":"__webpack_require__","line":20,"method":null,"native":false},{"column":18,"file":"/home/med/Documents/inversify-starter/dist/index.js","function":null,"line":84,"method":null,"native":false},{"column":10,"file":"/home/med/Documents/inversify-starter/dist/index.js","function":null,"line":87,"method":null,"native":false},{"column":30,"file":"module.js","function":"Module._compile","line":653,"method":"_compile","native":false},{"column":10,"file":"module.js","function":"Module._extensions..js","line":664,"method":".js","native":false},{"column":32,"file":"module.js","function":"Module.load","line":566,"method":"load","native":false}]}
+info: listening on port 3000
+info: listening on port 3000
+info: listening on port 3000
+info: listening on port 3000

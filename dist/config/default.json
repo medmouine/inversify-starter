@@ -1,0 +1,8 @@
+{
+  "name": "Qostodian-chain-service",
+  "port": 3000,
+  "HLF": {
+    "cardName": "admin@qostodian-v1",
+    "remotePath": "./localLogs/"
+  }
+}
