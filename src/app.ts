@@ -5,7 +5,6 @@ import * as compression from 'compression';
 import * as cors from 'cors';
 import * as errorHandler from 'errorhandler';
 import * as express from 'express';
-import { Application } from 'express-serve-static-core';
 import * as expressStatusMonitor from 'express-status-monitor';
 import * as helmet from 'helmet';
 import { Container } from 'inversify';
@@ -29,11 +28,13 @@ export class Server {
     const inversifyApp: InversifyExpressServer = new InversifyExpressServer(this.container);
 
     // configure application
-    inversifyApp.setConfig((app) => this.config(app));
+    inversifyApp.setConfig((app) => {
+      return this.config(app);
+    });
     this.app = inversifyApp.build();
   }
 
-  public config (app: Application): void {
+  public config (app: express.Application): void {
     // add static paths
     app.use(express.static(path.join(__dirname, 'public')));
     // mount logger
@@ -41,7 +42,7 @@ export class Server {
       stream: {
         write: (message: string) => logger.info(message.trim()),
       },
-    } as morgan.Options));
+    }));
 
     app.use(bodyParser.urlencoded({
       extended: true,
